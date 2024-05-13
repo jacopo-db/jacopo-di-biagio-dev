@@ -1,0 +1,25 @@
+.hobby{
+    background-color: $primary-blue;
+    &-title{
+        text-align: center;
+        height: 10%;
+    }
+    &-container{
+        background-color: $aq-blue;
+        height: 90%;
+        border-top: 2px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+// Desktop style
+@media (min-width: $desktop){
+    .hobby-title{
+        padding-top: 30px;
+    }
+    .hobby-container{
+        flex-direction: row;
+    }
+}

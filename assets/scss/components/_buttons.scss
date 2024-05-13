@@ -1,0 +1,37 @@
+@mixin btn{
+    background-color: $primary-brown;
+    color: $primary-beige-text;
+    border: 2px solid #000;
+    border-top-color: #fff;
+    border-radius: 4px;
+    &:hover{
+        background-color: $primary-beige;
+        color: $primary-brown;
+        border-top-color: $primary-brown;
+        border-left-color: $primary-brown;
+    }
+}
+@mixin btn-inverse{
+    @include basic-box;
+    &:hover{
+        background-color: $primary-brown;
+        color: $primary-white;
+        border: 2px solid #000;
+        border-top-color: #fff;
+    }
+}
+.btn{
+    @include btn;
+    padding: 20px;
+}
+.btn-un{
+    @extend .btn;
+    background-color: $primary-un-blue;
+    padding: 5px 10px;
+}
+// Tablet style
+@media (min-width: $tablet){
+    .btn-un{
+        padding: 10px 10%;
+    }
+}

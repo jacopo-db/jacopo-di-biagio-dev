@@ -1,0 +1,103 @@
+.timeline{
+    background-color: $primary-blue;
+    &-title{
+        text-align: center;
+        height: 10%;
+    }
+    &-container{
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-left{
+            height: 90%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            justify-content: space-around;
+            padding: 0 15px 80px 10px;
+            .timeline-content{
+                h2, p{
+                    text-align: end;
+                }
+            }
+        }
+        &-center{
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            height: 90%;
+            background-color: #a3d359;
+            border-radius: 8px;
+            span{
+                border: 4px solid #ffe41f;
+                position: relative;
+                z-index: 2;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: $secondary-blue;
+            }
+            div{
+                position: absolute;
+                height: 100%;
+                border: 6px solid #CD9647;
+                z-index: 1;
+            }
+        }
+        &-right{
+            height: 90%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            padding: 80px 10px 0 15px;
+        }
+        .timeline-content{
+            h2{
+                margin-bottom: 10px;
+                color: $secondary-blue;
+            }
+            span{
+                font-weight: bold;
+            }
+            .start{
+                color: transparent;
+                background-image: linear-gradient(to right, #00685e, #0cf597);
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+            .lidl{
+                color: $secondary-blue;
+                span{
+                    color: #E71A20;
+                }
+            }
+            .metal{
+                color: transparent;
+                background-image: linear-gradient(to right, #000, red);
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+            .kiabi{
+                color: #fff;
+            }
+        }
+    }
+}
+// Desktop style
+@media (min-width: $desktop){
+    .timeline-title{
+        padding: 30px;
+    }
+    .timeline-container-left{
+        padding-right: 50px;
+    }
+    .timeline-container-right{
+        padding-left: 50px;
+    }
+}

@@ -1,0 +1,105 @@
+.contact{
+    background-color: $primary-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-title{
+        @include display-base;
+        flex-direction: column;
+        height: 50%;
+        &-scene{
+            width: 100%;
+            &-box{
+                text-align: center;
+                @include basic-box;
+                width: 203px;
+                padding: 20px 0;
+                margin: 0 auto 5px auto;
+                position: relative;
+                animation: third-box 0.6s linear infinite;
+            }
+            &-floor{
+                position: relative;
+                display: flex;
+                justify-content: space-around;
+                .contact-mario{
+                    border-bottom: 5px solid $primary-brown ;
+                    position: relative;
+                    width: 150px;
+                    img{
+                        position: absolute;
+                        width: 150px;
+                        bottom: 0px;
+                        left: 12px;
+                    }
+                }
+                .contact-plants{
+                    border-bottom: 5px solid $primary-brown;
+                    width: 100px;
+                }
+            }
+        }
+    }
+    &-form{
+        @include display-base;
+        form{
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            height: 100%;
+            width: 100%;
+            gap: 15px;
+
+            label{
+                margin-bottom: -10px;
+                width: 90%;
+                margin: 0 auto;
+            }
+            input{
+                border: 2px solid green;
+                background-color: $primary-green;
+                padding: 10px;
+                width: 90%;
+                margin: 0 auto;
+                border-top-right-radius: 30px;
+                border-top-left-radius: 30px;
+            }
+            textarea{
+                height: 80px;
+                width: 90%;
+                margin: 0 auto;
+                padding: 10px;
+                resize: none;
+            }
+            .contact-form-btn{
+                @include btn;
+                background-color: $primary-brown;
+                font-size: 16px;
+                &:hover{
+                    cursor: pointer;
+
+                }
+            }
+        }
+    }
+}
+@media (min-width: $desktop){
+    .contact-title-scene-box{
+        width: 300px;
+    }
+    .contact-form{
+        form{
+            max-width: $desktop;
+            justify-content: center;
+            label{
+                font-size: 20px;
+            }
+            input{
+                padding: 15px;
+            }
+            textarea{
+                height: 150px;
+            }
+        }
+    }
+}

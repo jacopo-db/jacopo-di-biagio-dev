@@ -1,0 +1,103 @@
+.footer{
+    background-color: $primary-blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-quote{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+        padding: 50px 0;
+        position: relative;
+        height: 30%;
+        &-container{
+            background-color: $primary-blue;
+            position: absolute;
+            display: flex;
+            width: 100%;
+            height: 39px;
+            animation: shell 5s linear  infinite;
+            img{
+                position: absolute;
+                height: 40px;
+                bottom: 0;
+                left: -20px;
+            }
+        }
+        a{
+            border: 2px solid green;
+            padding: 1px 15px;
+            border-radius: 4px;
+            background-color: $primary-green;
+        }
+    }
+    &-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        height: 70%;
+        .social{
+            background-color: $primary-white;
+            border: 1px solid #000;
+            border-radius: 50px;
+            text-align: center;
+            width: 70%;
+            max-width: 600px;
+            padding: 20px 0;
+            h2{
+                color: $primary-sky-blue;
+            }
+            &-icons{
+                margin-top: 50px;
+                display: flex;
+                justify-content: space-around;
+                .fa-brands{
+                    color: $primary-sky-blue;
+                    font-size: 30px;
+                    transition: color 0.5s;
+                    &:hover{
+                        color: $primary-beige;
+                        transform: scale(1.5);
+                        color: $primary-beige;
+                    }
+                    &:visited{
+                        color: $primary-brown;
+                    }
+                }
+            }
+        }
+        .quick-links{
+            width: 100%;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                gap: 70px;
+                flex-wrap: wrap;
+                a{
+                    padding: 20px;
+                    @include btn-inverse;
+                }
+            }
+        }
+        .copyright{
+            width: 100%;
+            height: 70px;
+            background-color: $primary-brown;
+            border-top: 2px solid #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 10px;
+        }
+    }
+}
+@media (min-width: $desktop){
+    .quick-links{
+        a{
+            padding: 30px;
+        }
+    }
+}

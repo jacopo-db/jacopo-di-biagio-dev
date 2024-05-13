@@ -1,0 +1,154 @@
+.skills{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #000;
+    &-title{
+        padding-bottom: 0px;
+    }
+    h2, h4{
+        color: $primary-un-beige;
+    }
+    h3{
+        color: $primary-brown;
+    }
+    &-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 60%;
+        min-height: 347px;
+        .skills-dev, .skills-soft{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 4px;
+            height: 50%;
+            justify-content: space-evenly;
+            .progress-bar{
+                width: 70%;
+                height: 10px;
+                border-radius: 5px;
+                background-color: $primary-un-aqua;
+                position: relative;
+                div{
+                    border-top-left-radius: 5px;
+                    border-bottom-left-radius: 5px;
+                    background-color: $primary-un-blue;
+                    height: 100%;
+                }
+                &-html{
+                    width: 90%;
+                }
+                &-css{
+                    width: 90%;
+                }
+                &-bootstrap{
+                    width: 60%;
+                }
+                &-git{
+                    width: 70%;
+                }
+                &-emotional{
+                    width: 95%;
+                }
+                &-work{
+                    width: 99%;
+                }
+                &-problem{
+                    width: 90%;
+                }
+                &-comunication{
+                    width: 85%;
+                }
+            }
+        }
+    }
+    &:hover{
+        .pr-animation{
+            animation: progress 2s infinite;
+        }
+    }
+    &-btn{
+        @include display-base;
+        padding-top: 10px;
+        a{
+            color: #000;
+        }
+    }
+    .mario-two{
+        height: 20%;
+        min-height: 204px;
+        &-sky{
+            display: flex;
+            align-items: flex-end;
+            position: relative;
+            height: 80%;
+            width: 100%;
+            .mario{
+                width: 40px;
+                position: absolute;
+                z-index: 2;
+                animation: mario-un linear 10s infinite;
+            }
+            &-box{
+                @include basic-box-ul;
+                padding: 7px 12px;
+                position: relative;
+                margin-left: 33.3%;
+                bottom: 50%;
+                z-index: 2;
+                &:first-of-type{
+                    animation: box 10s linear infinite;
+                }
+                &:last-of-type{
+                    animation: second-box 10s linear infinite;
+                }   
+            }
+            .mushroom{
+                width: 30px;
+                position: absolute;
+                z-index: 1;
+                opacity: 0;
+                animation: mushroom 10s linear infinite;
+            }
+            .money{
+                width: 25px;
+                position: absolute;
+                z-index: 3;
+                opacity: 0;
+                animation: money 10s linear infinite;
+            }
+        }
+        &-floor{
+            width: 100%;
+            height: 20%;
+            background-color: $primary-un-blue;
+            position: relative;
+            z-index: 2;
+        }
+    }
+}
+// Desktop style
+@media (min-width: $desktop){
+    .skills-title{
+        padding: 30px;
+    }
+    .skills-container{
+        flex-direction: row;
+        .skills-dev, .skills-soft{
+            width: 40%;
+            height: 100%;
+            align-items: flex-start;
+            &-title{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+            }
+            .progress-bar{
+                width: 100%;
+            }
+        }
+    }
+}

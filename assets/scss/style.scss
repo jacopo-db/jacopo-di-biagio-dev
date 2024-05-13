@@ -1,0 +1,19 @@
+// base files
+@import "base/variables";
+@import "base/base";
+
+// components
+@import "components/navbar";
+@import "components/buttons";
+@import "components/animation";
+@import "components/cards";
+
+// sections
+@import "sections/header";
+@import "sections/skills";
+@import "sections/contact";
+@import "sections/footer";
+
+@import "sections/my-experience";
+@import "sections/timeline";
+@import "sections/hobby"

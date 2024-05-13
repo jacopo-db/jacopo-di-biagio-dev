@@ -1,0 +1,112 @@
+// mario base
+@keyframes mario{
+    from{left: -80px;}
+    to{left: 95%;}
+}
+// mario underground
+$bm-bottom: 8%;
+
+@keyframes mario-un{
+    0%{bottom: 90%; left: 0px;}
+    5%{bottom: 0px;}
+    31%{bottom: 0px;}
+    33%{bottom: 27%; left: 33.3%;}
+    35%{bottom: 0px;}
+    45%{left: 50%;}
+    // mario transformation
+    55%{transform: scale(1); bottom: 0px;}
+    56%{transform: scale(1.2); bottom: 6%;}
+    57%{transform: scale(0.6);}
+    58%{transform: scale(1.4);}
+    59%{transform: scale(0.8);}
+    60%{transform: scale(1.6); left: 50%; bottom: $bm-bottom;}
+
+    74%{bottom: $bm-bottom;}
+    76%{bottom: 20%; left: 69%;}
+    78%{bottom: $bm-bottom;}
+    100%{transform: scale(1.6); bottom: $bm-bottom; left: 95%;}
+}
+// box
+@keyframes box{
+    0%{background-color: $primary-beige;}
+    33%{@include basic-box-ul; bottom: 50%;}
+    34%{@include trasform-box-ul; bottom: 57%;}
+    35%{bottom: 50%;}
+    100%{@include trasform-box-ul;}
+}
+@keyframes second-box{
+    0%{background-color: $primary-beige;}
+    76%{@include basic-box-ul; bottom: 50%}
+    77%{@include trasform-box-ul; bottom: 57%}
+    78%{bottom: 50%;}
+    100%{@include trasform-box-ul;}
+}
+@keyframes third-box{
+    0%{top: 0px;}
+    50%{top: 0px;}
+    56%{top: -7%;}
+    100%{top: 0px;}
+}
+// mushroom
+@keyframes mushroom{
+    0%{left: 33.3%; bottom: 52.5%;}
+    36%{bottom: 52.5%; opacity: 0;}
+    38%{opacity: 1;}
+    40%{left: 33.3%; bottom: 72%;}
+    45%{left: 36%; bottom: 72%;}
+    50%{bottom: 0px;}
+    54%{opacity: 1;}
+    55%{left: 50%; bottom: 0px; opacity: 0;}
+    100%{left: 50%; opacity: 0;}
+}
+// money
+@keyframes money{
+    0%{right: 8%; bottom: 12%;}
+    76%{bottom: 12%;}
+    77%{opacity: 0;}
+    78%{opacity: 1;}
+    80%{bottom: 300%;}
+    82%{opacity: 1;}
+    83%{opacity: 0;}
+    84%{bottom: 12%;}
+    100%{right: 8%; bottom: 12%; opacity: 0;}
+}
+// shell
+@keyframes shell{
+    0%{width: 100%; left: 0;}
+    50%{width: 0; left: 100%;}
+    100%{width: 100%; left: 0;}
+}
+// progress bar
+@keyframes progress{
+    0%{ width: 5%; background-color: $primary-white;}
+  100%{ width: 100%; background-color: $primary-un-blue;}
+}
+// controller
+@keyframes controller{
+    0%{scale: 1;}
+    20%{scale: 1.3;}
+    30%{rotate: 40deg;}
+    50%{scale: 1.3; rotate: -40deg;}
+    80%{rotate: 40deg;}
+    100%{scale: 1;}
+}
+// sport
+@keyframes sport{
+    0%{rotate: 0;}
+    100%{rotate: 360deg;}
+}
+// travel
+@keyframes travel{
+    0%{translate: 0;}
+    2%{translate: 5px;}
+    4%{translate: -5px;}
+    6%{translate: 5px;}
+    8%{translate: 0; bottom: 0;}
+    49%{bottom: 600px; opacity: 1;}
+    50%{bottom: 600px; opacity: 0;}
+    51%{bottom: -600px; opacity: 0;}
+    52%{opacity: 1;}
+    90%{bottom: 0;}
+    100%{bottom: 0;}
+}

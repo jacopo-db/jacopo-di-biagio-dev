@@ -1,0 +1,28 @@
+// color
+$primary-beige: #FFA542; //#E1A426 cambiare colore?
+$primary-blue: #A1AEFF;
+$primary-sky-blue: #2CD9FF;
+$primary-brown: #DD5917;
+$primary-beige-text: #FFDDC8;
+$primary-white: #fff;
+$primary-green: #84D300;
+
+$primary-un-blue: #02A2AF;
+$primary-un-aqua: #B5EBF2;
+$primary-un-beige: #EA9E23; //#E0A424 cambiare colore?
+
+$secondary-blue: #2828FF;
+
+$aq-blue: #4F0EFF;
+$aq-green: #009301;
+// border
+$primary-border: 2px solid $primary-brown;
+$primary-border-un: 2px solid $primary-un-blue;
+
+// shadow
+$shadow-primary: 1px 1px 4px 0 rgba(0, 0, 0, .1);
+
+// media queries
+$desktop: 961px;
+$tablet: 401px;
+$extra-small: 355px;

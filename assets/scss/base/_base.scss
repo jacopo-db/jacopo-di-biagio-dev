@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%; //max-width: 2560px;
+    font-family: "Pixelify Sans", sans-serif;
+    // typography
+    h2{
+        font-size: 30px;
+    }
+    p{
+        font-size: 18px;
+    }
+    a{
+        font-size: 20px;
+        color: #000;
+    }
+    textarea, input{
+        font-family: "Pixelify Sans", sans-serif;
+    }
+    q{
+        font-size: 25px;
+    }
+}
+.container-scrolling{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+}
+.scrolling{
+    padding-top: 20px;
+    height: 100vh;
+    scroll-snap-align: start;
+    overflow: scroll;
+}
+@media (min-width: $desktop){
+    body{
+        h1{
+            font-size: 50px;
+        }
+        h2{
+            font-size: 40px;
+        }
+        p, h4{
+            font-size: 20px;
+        }
+        h3{
+            font-size: 30px;
+        }
+        input, label, textarea{
+            font-size: 18px;
+        }
+        q{
+            font-size: 38px;
+        }
+    }
+    .scrolling{
+        padding-top: 60px;
+    }
+}
+//base mixin
+@mixin display-base {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+//box
+@mixin basic-box{
+    border: 2px solid $primary-brown;
+    border-bottom: 2px solid #000;
+    border-right: 2px solid #000;
+    color: $primary-brown;
+    background-color: $primary-beige;
+    border-radius: 4px;
+}
+@mixin basic-box-ul{
+    @include basic-box;
+    border-bottom: $primary-border-un;
+    border-right: $primary-border-un;
+}
+@mixin trasform-box-ul{
+    border-top: $primary-border-un; 
+    border-left: $primary-border-un;
+    background-color: $primary-brown;
+}

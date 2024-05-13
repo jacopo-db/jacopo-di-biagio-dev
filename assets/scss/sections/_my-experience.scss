@@ -1,0 +1,37 @@
+.experience{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    &-title{
+        text-align: center;
+        height: 10%;
+        color: $primary-un-blue;
+    }
+    &-project{
+        height: 80%;
+        min-height: 430px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    &-footer{
+        height: 10%;
+        color: $primary-un-blue;
+        text-align: center;
+        padding-bottom: 30px;
+    }
+}
+// Desktop style
+@media (min-width: $desktop){
+    .experience-title{
+        padding-top: 30px;
+    }
+    .experience-project{
+        height: 70%;
+        flex-direction: row;
+    }
+    .experience-footer{
+        height: 20%;
+    }
+}
