@@ -563,7 +563,6 @@ body q {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 35px;
 }
 .header-container-img {
   width: 120px;
