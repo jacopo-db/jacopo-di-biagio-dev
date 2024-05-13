@@ -6,12 +6,17 @@
   list-style: none;
 }
 
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   display: block;
   position: relative;
   margin: 0 auto;
   max-width: 100%;
   font-family: "Pixelify Sans", sans-serif;
+  min-height: -webkit-fill-available;
 }
 body h2 {
   font-size: 30px;
