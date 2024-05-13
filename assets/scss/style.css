@@ -6,14 +6,8 @@
   list-style: none;
 }
 
-html {
-  height: -webkit-fill-available;
-}
-
 body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  display: block;
   position: relative;
   margin: 0 auto;
   max-width: 100%;
@@ -40,7 +34,6 @@ body q {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
-  min-height: -webkit-fill-available;
 }
 
 .scrolling {
@@ -570,10 +563,10 @@ body q {
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 35px;
+  padding-top: 0px;
 }
 .header-container-img {
-  width: 150px;
+  width: 120px;
 }
 .header-container-img img {
   width: 100%;
@@ -606,7 +599,7 @@ body q {
   align-items: flex-end;
   justify-content: space-between;
   width: 100%;
-  height: 80%;
+  height: 70%;
 }
 .header .mario-one-sky .mario {
   width: 40px;
@@ -632,7 +625,7 @@ body q {
 }
 .header .mario-one-floor {
   width: 100%;
-  height: 20%;
+  height: 30%;
   background-color: #DD5917;
   border-top: 2px solid #000;
 }
