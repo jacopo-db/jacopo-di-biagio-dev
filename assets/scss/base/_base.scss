@@ -38,6 +38,7 @@ body{
     padding-top: 20px;
     height: 100vh;
     scroll-snap-align: start;
+    overflow: scroll;
 }
 @media (min-width: $desktop){
     body{

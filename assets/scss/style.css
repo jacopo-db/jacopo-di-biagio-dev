@@ -40,6 +40,7 @@ body q {
   padding-top: 20px;
   height: 100vh;
   scroll-snap-align: start;
+  overflow: scroll;
 }
 
 @media (min-width: 961px) {
@@ -564,7 +565,7 @@ body q {
   justify-content: space-evenly;
 }
 .header-container-img {
-  width: 120px;
+  width: 100px;
 }
 .header-container-img img {
   width: 100%;
@@ -624,7 +625,6 @@ body q {
 .header .mario-one-floor {
   width: 100%;
   height: 30%;
-  min-height: 40px;
   background-color: #DD5917;
   border-top: 2px solid #000;
 }
