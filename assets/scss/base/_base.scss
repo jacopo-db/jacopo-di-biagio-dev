@@ -14,8 +14,6 @@ body{
     margin: 0 auto;
     max-width: 100%; //max-width: 2560px;
     font-family: "Pixelify Sans", sans-serif;
-    //mobile viewport bug fix
-    min-height: -webkit-fill-available;
     // typography
     h2{
         font-size: 30px;
@@ -38,6 +36,8 @@ body{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
     height: 100vh;
+    //mobile viewport bug fix
+    min-height: -webkit-fill-available;
 }
 .scrolling{
     padding-top: 20px;

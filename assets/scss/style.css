@@ -16,7 +16,6 @@ body {
   margin: 0 auto;
   max-width: 100%;
   font-family: "Pixelify Sans", sans-serif;
-  min-height: -webkit-fill-available;
 }
 body h2 {
   font-size: 30px;
@@ -39,6 +38,7 @@ body q {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  min-height: -webkit-fill-available;
 }
 
 .scrolling {
