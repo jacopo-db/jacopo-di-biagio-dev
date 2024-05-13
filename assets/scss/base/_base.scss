@@ -32,11 +32,11 @@ body{
 .container-scrolling{
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 100svh;
+    height: 100dvh;
 }
 .scrolling{
     padding-top: 20px;
-    height: 100svh;
+    height: 100dvh;
     scroll-snap-align: start;
     overflow: scroll;
 }
